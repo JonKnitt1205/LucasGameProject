@@ -13,8 +13,9 @@
                 "${workspaceFolder}/Code/dependencies/include",
                 "-L",
                 "${workspaceFolder}/Code/dependencies/lib",
+                "-lglfw3",
+                "-lgdi32",
                 "-lopengl32",
-                "-lglfw3dll",
                 "-o",
                 "${workspaceFolder}/TheLucasGame/runGame.exe" 
             ],
