@@ -6,6 +6,7 @@
             "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
+                "-mwindows",
                 "-g",
                 "${workspaceFolder}/Code/*.cpp",
                 "${workspaceFolder}/Code/dependencies/glad.c",
@@ -13,8 +14,7 @@
                 "${workspaceFolder}/Code/dependencies/include",
                 "-L",
                 "${workspaceFolder}/Code/dependencies/lib",
-                "-lglfw3",
-                "-lgdi32",
+                "-lglfw3dll",
                 "-lopengl32",
                 "-o",
                 "${workspaceFolder}/TheLucasGame/runGame.exe" 
